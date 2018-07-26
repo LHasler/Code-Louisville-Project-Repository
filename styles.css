@@ -35,7 +35,7 @@ p    {
   padding: 1em;
   margin: 10px 10px 10px;
   background: transparent;
-  color: rgb(252, 172, 0);
+  color: white;
   text-shadow: 2px 2px 2px 2px;
 }
 
@@ -48,30 +48,26 @@ p    {
   width: 100%;
 }
 
-.music{
-  font-size: 10px;
+
+
+
+/********************
+Blur box behind text 
+*********************/
+
+#blur-box {
+  background-position: center top;
+  background-size: 1080px auto;
+  padding: 70px 80px 70px 80px;
 }
 
-a {
-  position: center;
+#search {
+  padding: 50px;
+  background: rgba(41, 41, 41, 0.75);
+  background: rgba(41, 41, 41, 0.75);
 }
 
-#links {
-  text-align:
-}
-/**********************
-Jquery parallax
-***********************/
-.parallax {
-    background-image: url("Crowd.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
 
-}
 
 /***********************
 navigation and dropdown menu
@@ -152,18 +148,61 @@ navigation and dropdown menu
 
 
 
+/*****************
+  Menu Icon Flip
+******************/
+.icon-container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(250, 186, 48);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(180deg)  ;
+  transform: rotate(180deg)  ;
+}
+
+.change .bar2 {
+  -webkit-transform: rotate(180deg)  ;
+  transform: rotate(180deg) ;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(180deg)  ;
+  transform: rotate(180deg)  ;
+}
 
 
 
-/* Media Queries */
+/**********************
+Jquery parallax
+***********************/
+.parallax {
+  background-image: url("Crowd.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
 
-@media(min-width: 375px) {
-  .main-header {
-      width: 100%;}
+}
 
 
 
-/* Social Media Links  */
+/******************
+ Social Media Links  
+*******************/
 
 
 a:link {
@@ -184,18 +223,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/********************
-Blur box behind text 
-*********************/
 
-#blur-box {
-  background-position: center top;
-  background-size: 1080px auto;
-  padding: 70px 80px 70px 80px;
-}
 
-#search {
-  padding: 50px;
-  background: rgba(41, 41, 41, 0.75);
-  background: rgba(41, 41, 41, 0.75);
-}
+/***************
+ Media Queries 
+****************/
+
+@media(min-width: 375px) {
+  .main-header {
+      width: 100%;}
