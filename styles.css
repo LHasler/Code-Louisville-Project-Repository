@@ -1,0 +1,201 @@
+/*main css*/
+
+
+h1{
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 14px 0 0;
+  font-weight: bold; 
+  font-style: bold; 
+  color: rgb(252, 172, 0);
+  background: transparent;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 14px 0 0;
+  font-weight: bold; 
+  font-style: bold; 
+  color: rgb(252, 172, 0);
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+p    {
+  font-size: 19px;
+  text-align: center;
+  padding: 1em;
+  margin: 10px 10px 10px;
+  background: transparent;
+  color: rgb(252, 172, 0);
+  text-shadow: 2px 2px 2px 2px;
+}
+
+.main-footer {
+  text-align: center;
+  color: white;
+  background:  black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.music{
+  font-size: 10px;
+}
+
+a {
+  position: center;
+}
+
+#links {
+  text-align:
+}
+/**********************
+Jquery parallax
+***********************/
+.parallax {
+    background-image: url("Crowd.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+}
+
+/***********************
+navigation and dropdown menu
+************************/
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Arial;
+  }
+  
+  /* links in navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    position: top;
+  }
+  
+  /* dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* dropdown button */
+  .dropdown .dropbtn {
+    font-size: 32px; 
+    border: none;
+    outline: none;
+    color: rgb(250, 186, 48);
+    padding: 10px 10px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  /* background color for content on hover*/
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(49, 49, 49);
+  }
+  
+  /* dropdown content on hover */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 70px;
+    z-index: 1;
+  }
+  
+  /* links in dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(250, 186, 48);
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  /*bcakground color on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(49, 49, 49);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+}
+
+
+
+
+
+
+/* Media Queries */
+
+@media(min-width: 375px) {
+  .main-header {
+      width: 100%;}
+
+
+
+/* Social Media Links  */
+
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(250, 186, 48);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/********************
+Blur box behind text 
+*********************/
+
+#blur-box {
+  background-position: center top;
+  background-size: 1080px auto;
+  padding: 70px 80px 70px 80px;
+}
+
+#search {
+  padding: 50px;
+  background: rgba(41, 41, 41, 0.75);
+  background: rgba(41, 41, 41, 0.75);
+}
