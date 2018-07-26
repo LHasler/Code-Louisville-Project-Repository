@@ -19,6 +19,8 @@ It also has our contact information and a brief desciption on the band's story u
 
 -Must be logged into FaceBook to view FaceBook profiles.
 
+-MUST download "Crowd.jpg" for parallax background picture to appear.
+
 /**********************
   JavaScript Functions
 ***********************/
