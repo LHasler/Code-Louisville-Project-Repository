@@ -48,7 +48,12 @@ p    {
   width: 100%;
 }
 
-
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
 
 
 /********************
@@ -72,13 +77,13 @@ Blur box behind text
 /***********************
 navigation and dropdown menu
 ************************/
-.navbar {
+  .navbar {
     overflow: hidden;
     background-color: transparent;
     font-family: Arial;
-  }
+  } 
   
-  /* links in navbar */
+  /* links in navbar  */
   .navbar a {
     float: left;
     font-size: 16px;
@@ -155,7 +160,7 @@ navigation and dropdown menu
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 100px;
 }
 
@@ -229,6 +234,64 @@ a:hover {
  Media Queries 
 ****************/
 
-@media(min-width: 375px) {
-  .main-header {
-      width: 100%;}
+
+@media only screen and (max-device-width: 480px) {
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1{
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 14px 0 0;
+  font-weight: bold; 
+  font-style: bold; 
+  color: rgb(252, 172, 0);
+  background: transparent;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 14px 0 0;
+  font-weight: bold; 
+  font-style: bold; 
+  color: rgb(252, 172, 0);
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+p    {
+  font-size: 22px;
+  text-align: center;
+  padding: 1em;
+  margin: 10px 10px 10px;
+  background: transparent;
+  color: white;
+  text-shadow: 2px 2px 2px 2px;
+}
+      }
